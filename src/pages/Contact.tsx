@@ -88,10 +88,10 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Lagos Office</h3>
+                    <h3 className="font-semibold mb-2">Atlanta Office</h3>
                     <p className="text-sm text-muted-foreground">
-                      Victoria Island Business District<br />
-                      Lagos, Nigeria
+                      2000 Parkwood Circle SE, Suite 320<br />
+                      Atlanta, GA 30339
                     </p>
                   </div>
                 </div>
@@ -101,10 +101,10 @@ const Contact = () => {
                     <MapPin className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Abuja Office</h3>
+                    <h3 className="font-semibold mb-2">Charlotte Office</h3>
                     <p className="text-sm text-muted-foreground">
-                      Central Business District<br />
-                      Abuja, Nigeria
+                      6230 Fairview Rd, Suite 220<br />
+                      Charlotte, NC 28210
                     </p>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Phone</h3>
-                    <p className="text-sm text-muted-foreground">+234 (0) 123 456 7890</p>
+                    <p className="text-sm text-muted-foreground">+1 (470) 555-2048</p>
                   </div>
                 </div>
 

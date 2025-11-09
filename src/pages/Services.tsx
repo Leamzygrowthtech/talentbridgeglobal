@@ -27,7 +27,7 @@ const Services = () => {
             <p className="text-lg text-muted-foreground leading-relaxed">
               From permanent placements to executive search, career coaching to workforce consulting,
               we provide end-to-end solutions that drive success for professionals and organizations
-              across Africa and globally.
+              worldwide.
             </p>
           </div>
 

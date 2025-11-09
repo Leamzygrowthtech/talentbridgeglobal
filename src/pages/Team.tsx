@@ -9,40 +9,40 @@ import heroImage from "@/assets/hero-about.jpg";
 const Team = () => {
   const teamMembers = [
     {
-      name: "Adebayo Okonkwo",
-      title: "Director of Talent Strategy",
-      bio: "With over 15 years of experience in global talent acquisition, Adebayo leads our strategic partnerships and executive recruitment initiatives across Africa and beyond. He specializes in connecting senior leaders with transformative opportunities in Fortune 500 and emerging enterprises.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Chioma Nwosu",
-      title: "Head of Employer Partnerships",
-      bio: "Chioma bridges the gap between top employers and exceptional talent. Her expertise lies in workforce planning and client relationship management, helping businesses across Nigeria and West Africa scale with precision and confidence.",
+      name: "Emma Clarke",
+      title: "Managing Partner",
+      bio: "With over 15 years of experience in global talent acquisition, Emma leads our strategic partnerships and executive recruitment initiatives. She specializes in connecting senior leaders with transformative opportunities in Fortune 500 and emerging enterprises worldwide.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     },
     {
-      name: "Kwame Mensah",
-      title: "Senior Talent Acquisition Consultant",
-      bio: "Kwame specializes in leadership recruitment across technology, finance, and energy sectors. His consultative approach ensures every placement creates long-term value for both clients and candidates throughout Africa and international markets.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      name: "Jonathan Müller",
+      title: "Senior Executive Recruiter",
+      bio: "Jonathan bridges the gap between top employers and exceptional talent. His expertise lies in workforce planning and client relationship management, helping businesses scale with precision and confidence across multiple industries.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     },
     {
-      name: "Amara Okafor",
-      title: "Director of Candidate Success & Development",
-      bio: "Amara oversees the candidate journey from resume alignment to placement, ensuring professionals are well-positioned for global opportunities. Her commitment to empowerment and excellence defines our candidate experience.",
+      name: "Sophia Rossi",
+      title: "Global Talent Consultant",
+      bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors. Her consultative approach ensures every placement creates long-term value for both clients and candidates in international markets.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
     },
     {
-      name: "Tunde Adeyemi",
-      title: "Recruitment Operations Manager",
-      bio: "Tunde drives operational efficiency across all recruitment projects. He manages internal systems, performance analytics, and process optimization, ensuring our workflows remain seamless and transparent.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      name: "Daniel Chen",
+      title: "Director of Client Services",
+      bio: "Daniel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. His commitment to excellence and strategic insight defines our client experience.",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
     },
     {
-      name: "Zainab Hassan",
-      title: "Communications & Brand Experience Lead",
-      bio: "Zainab shapes the way Talent Bridge Global connects with both clients and candidates. She leads our employer branding initiatives, storytelling, and digital communication strategies that reflect our values of integrity and impact.",
+      name: "Isabella Duarte",
+      title: "Talent Acquisition Specialist",
+      bio: "Isabella drives recruitment excellence across all project verticals. She manages candidate pipelines, performance analytics, and relationship development, ensuring our placements align perfectly with client needs.",
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
+    },
+    {
+      name: "Marcus Thompson",
+      title: "Operations Director",
+      bio: "Marcus ensures operational efficiency across all recruitment initiatives. He manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     },
   ];
 
@@ -53,7 +53,7 @@ const Team = () => {
       <HeroSection
         image={heroImage}
         title="Meet the Team Behind Talent Bridge Global"
-        subtitle="Our strength lies in our people. Our recruitment specialists, career strategists, and industry consultants work together to connect exceptional talent with world-class organizations across Africa and beyond."
+        subtitle="Our strength lies in our people. Our recruitment specialists, career strategists, and industry consultants work together to connect exceptional talent with world-class organizations globally."
       />
 
       <section className="section-padding bg-background">

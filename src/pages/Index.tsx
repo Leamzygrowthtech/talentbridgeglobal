@@ -28,22 +28,22 @@ import {
 const Index = () => {
   const teamMembers = [
     {
-      name: "Adebayo Okonkwo",
-      title: "Director of Talent Strategy",
-      bio: "With over 15 years in global talent acquisition, Adebayo leads our strategic partnerships and executive recruitment across Africa and beyond.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-    },
-    {
-      name: "Chioma Nwosu",
-      title: "Head of Employer Partnerships",
-      bio: "Chioma bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
+      name: "Emma Clarke",
+      title: "Managing Partner",
+      bio: "With over 15 years in global talent acquisition, Emma leads our strategic partnerships and executive recruitment across multiple industries.",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     },
     {
-      name: "Kwame Mensah",
-      title: "Senior Talent Acquisition Consultant",
-      bio: "Kwame specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      name: "Jonathan Müller",
+      title: "Senior Executive Recruiter",
+      bio: "Jonathan bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+    },
+    {
+      name: "Sophia Rossi",
+      title: "Global Talent Consultant",
+      bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
     },
   ];
 
@@ -55,7 +55,7 @@ const Index = () => {
       <HeroSection
         image={heroImage}
         title="Your Global Partner in Talent Acquisition and Workforce Success"
-        subtitle="Whether you're seeking your next career breakthrough or the perfect hire to drive your organization forward, Talent Bridge Global connects professionals and employers across Africa and the world."
+        subtitle="Whether you're seeking your next career breakthrough or the perfect hire to drive your organization forward, Talent Bridge Global connects professionals and employers worldwide."
       />
 
       {/* About Us Section */}
@@ -80,8 +80,7 @@ const Index = () => {
                 <div className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
                 <p className="text-muted-foreground leading-relaxed">
                   Our partnerships extend to Fortune 500 companies and leading enterprises across
-                  energy, technology, finance, healthcare, and logistics sectors throughout Africa
-                  and globally.
+                  energy, technology, finance, healthcare, and logistics sectors worldwide.
                 </p>
               </div>
               <div className="flex items-start space-x-3">
@@ -103,8 +102,8 @@ const Index = () => {
               <div className="bg-secondary/50 p-6 rounded-lg">
                 <h3 className="font-bold text-xl mb-3 text-primary">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To become Africa's leading recruitment partner recognized for shaping futures,
-                  inspiring growth, and driving workforce success globally.
+                  To become a globally recognized recruitment partner known for shaping futures,
+                  inspiring growth, and driving workforce success across industries.
                 </p>
               </div>
             </div>
@@ -132,7 +131,7 @@ const Index = () => {
                 <p className="text-muted-foreground mb-6 leading-relaxed">
                   At Talent Bridge Global, we connect passionate professionals with leading
                   companies, including Fortune 500 and world-class organizations across multiple
-                  industries in Africa and beyond.
+                  industries globally.
                 </p>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start space-x-3">

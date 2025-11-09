@@ -14,7 +14,7 @@ const About = () => {
       <HeroSection
         image={heroImage}
         title="About | Connect Globally, Hire Today"
-        subtitle="Bridging talent and opportunity across Africa and beyond"
+        subtitle="Bridging talent and opportunity across industries and markets worldwide"
       />
 
       <section className="section-padding bg-background">
@@ -69,8 +69,8 @@ const About = () => {
                 </div>
                 <h3 className="font-bold text-xl mb-3">Global Reach</h3>
                 <p className="text-muted-foreground">
-                  Access to opportunities across Africa and international markets with established
-                  Fortune 500 partnerships.
+                  Access to opportunities across international markets with established
+                  Fortune 500 partnerships and global network reach.
                 </p>
               </div>
               <div className="text-center">

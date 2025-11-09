@@ -98,13 +98,20 @@ const Footer = () => {
               <li className="flex items-start space-x-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
                 <span className="text-sm text-white/80">
-                  Lagos Business District<br />
-                  Lagos, Nigeria
+                  2000 Parkwood Circle SE, Suite 320<br />
+                  Atlanta, GA 30339
+                </span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <MapPin size={18} className="mt-1 flex-shrink-0" />
+                <span className="text-sm text-white/80">
+                  6230 Fairview Rd, Suite 220<br />
+                  Charlotte, NC 28210
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="flex-shrink-0" />
-                <span className="text-sm text-white/80">+234 (0) 123 456 7890</span>
+                <span className="text-sm text-white/80">+1 (470) 555-2048</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={18} className="flex-shrink-0" />
