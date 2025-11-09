@@ -39,7 +39,7 @@ const Contact = () => {
     // In a real application, this would send data to a backend
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you within 24 hours.",
+      description: "Thank you for contacting us. We'll be in touch shortly.",
     });
 
     // Reset form
@@ -180,7 +180,7 @@ const Contact = () => {
 
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <Label htmlFor="company">Company</Label>
+                      <Label htmlFor="company">Company Name</Label>
                       <Input
                         id="company"
                         value={formData.company}
@@ -217,18 +217,15 @@ const Contact = () => {
                       </Select>
                     </div>
                     <div className="space-y-2">
-                      <Label htmlFor="service">Service of Interest</Label>
+                      <Label htmlFor="service">Area of Interest</Label>
                       <Select value={formData.service} onValueChange={(value) => handleChange("service", value)}>
                         <SelectTrigger id="service">
-                          <SelectValue placeholder="Select service" />
+                          <SelectValue placeholder="Select area of interest" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="job-seeker">Job Seeker Services</SelectItem>
-                          <SelectItem value="recruitment">Recruitment Solutions</SelectItem>
                           <SelectItem value="executive-search">Executive Search</SelectItem>
-                          <SelectItem value="coaching">Career Coaching</SelectItem>
-                          <SelectItem value="consulting">Workforce Consulting</SelectItem>
-                          <SelectItem value="rpo">RPO Services</SelectItem>
+                          <SelectItem value="career-opportunity">Career Opportunity</SelectItem>
+                          <SelectItem value="general-enquiry">General Enquiry</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
@@ -249,7 +246,7 @@ const Contact = () => {
                   </div>
 
                   <Button type="submit" className="w-full btn-primary" size="lg">
-                    Submit Message
+                    Send Message
                   </Button>
                 </form>
               </div>
