@@ -24,7 +24,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <img src={logo} alt="Talent Bridge Global" className="h-16 w-auto" />
+            <img src={logo} alt="Talent Bridge Global" className="h-20 w-auto" />
             <p className="text-sm text-white/80 leading-relaxed">
               Your global partner in talent acquisition and workforce success. Connecting exceptional
               professionals with world-class organizations.

@@ -66,7 +66,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button onClick={() => scrollToSection("home")} className="flex items-center group">
-            <img src={logo} alt="Talent Bridge Global" className="h-12 w-auto" />
+            <img src={logo} alt="Talent Bridge Global" className="h-16 md:h-20 w-auto transition-transform hover:scale-105" />
           </button>
 
           {/* Desktop Navigation */}

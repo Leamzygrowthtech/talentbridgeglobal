@@ -406,13 +406,13 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section-padding bg-background">
+      <section id="contact" className="section-padding bg-gradient-to-br from-primary/5 via-background to-background">
         <div className="container-custom">
           <div className="grid lg:grid-cols-5 gap-12">
             {/* Contact Information */}
             <div className="lg:col-span-2 space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6">Get In Touch</h2>
+                <h2 className="text-3xl font-bold mb-6 text-primary">Get In Touch</h2>
                 <p className="text-muted-foreground leading-relaxed mb-8">
                   Whether you're a job seeker looking for your next opportunity or an employer
                   seeking exceptional talent, we're here to help. Reach out today and let's start
@@ -473,8 +473,8 @@ const Index = () => {
                 </div>
               </div>
 
-              <div className="bg-secondary/50 p-6 rounded-lg">
-                <h3 className="font-semibold mb-3">Office Hours</h3>
+              <div className="bg-primary/10 p-6 rounded-lg border-l-4 border-primary">
+                <h3 className="font-semibold mb-3 text-primary">Office Hours</h3>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
                   <p>Saturday: 9:00 AM - 2:00 PM</p>
@@ -485,8 +485,8 @@ const Index = () => {
 
             {/* Contact Form */}
             <div className="lg:col-span-3">
-              <div className="bg-card p-8 rounded-lg shadow-lg">
-                <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
+              <div className="bg-card p-8 rounded-lg shadow-lg border-t-4 border-primary">
+                <h3 className="text-2xl font-bold mb-6 text-primary">Send Us a Message</h3>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">

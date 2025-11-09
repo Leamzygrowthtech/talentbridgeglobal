@@ -100,7 +100,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .hero-section {
-    @apply relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden;
+    @apply relative min-h-[85vh] md:min-h-[90vh] flex items-center justify-center overflow-hidden;
   }
 
   .hero-overlay {
