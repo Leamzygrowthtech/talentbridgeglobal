@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,16 +65,8 @@ const Header = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <button onClick={() => scrollToSection("home")} className="flex items-center space-x-2 group">
-            <div className="flex items-center">
-              <span className="text-2xl font-bold text-primary group-hover:text-primary-hover transition-colors">
-                Talent
-              </span>
-              <span className="text-2xl font-bold text-accent ml-1">Bridge</span>
-              <span className="text-sm font-semibold text-muted-foreground ml-2 hidden sm:inline">
-                Global
-              </span>
-            </div>
+          <button onClick={() => scrollToSection("home")} className="flex items-center group">
+            <img src={logo} alt="Talent Bridge Global" className="h-12 w-auto" />
           </button>
 
           {/* Desktop Navigation */}
