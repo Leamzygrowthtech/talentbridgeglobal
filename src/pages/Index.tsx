@@ -127,6 +127,7 @@ const Index = () => {
       <section id="home">
         <HeroSection
         image={heroImage}
+          companyName="Talent Bridge Global"
           title="Your Global Partner in Talent Acquisition and Workforce Success"
           subtitle="Whether you're seeking your next career breakthrough or the perfect hire to drive your organization forward, Talent Bridge Global connects professionals and employers worldwide."
         />
