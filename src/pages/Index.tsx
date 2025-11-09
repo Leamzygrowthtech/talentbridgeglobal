@@ -9,6 +9,21 @@ import Footer from "@/components/Footer";
 import heroImage from "@/assets/hero-home.jpg";
 import jobSeekersImage from "@/assets/job-seekers.jpg";
 import employersImage from "@/assets/employers.jpg";
+import fortune500 from "@/assets/partners/fortune-500.png";
+import forbesGlobal from "@/assets/partners/forbes-global.png";
+import ftse100 from "@/assets/partners/ftse-100.png";
+import sp500 from "@/assets/partners/sp-500.png";
+import dax40 from "@/assets/partners/dax-40.png";
+import headhuntingIcon from "@/assets/partners/headhunting-icon.png";
+import globalTalentIcon from "@/assets/partners/global-talent-icon.png";
+import partnershipIcon from "@/assets/partners/partnership-icon.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   const teamMembers = [
@@ -260,18 +275,61 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="section-padding bg-primary text-primary-foreground">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to Transform Your Career or Organization?
+      {/* Companies We Partner With */}
+      <section className="section-padding bg-[#D32F2F]">
+        <div className="container-custom">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+            Companies We Partner With:
           </h2>
-          <p className="text-xl mb-8 max-w-2xl mx-auto opacity-90">
-            Let's connect and explore how we can help you achieve your goals.
-          </p>
-          <Button asChild size="lg" variant="secondary" className="font-semibold">
-            <Link to="/contact">Get Started Today</Link>
-          </Button>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {[
+                { src: fortune500, alt: "Fortune 500" },
+                { src: forbesGlobal, alt: "Forbes Global 2000" },
+                { src: ftse100, alt: "FTSE 100" },
+                { src: sp500, alt: "S&P 500" },
+                { src: dax40, alt: "DAX 40" },
+                { src: headhuntingIcon, alt: "Headhunting Services" },
+                { src: globalTalentIcon, alt: "Global Talent Network" },
+                { src: partnershipIcon, alt: "Strategic Partnerships" },
+              ].map((partner, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/5">
+                  <div className="bg-white rounded-lg p-6 h-40 flex items-center justify-center">
+                    <img
+                      src={partner.src}
+                      alt={partner.alt}
+                      className="max-w-full max-h-full object-contain"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex" />
+            <CarouselNext className="hidden md:flex" />
+          </Carousel>
+        </div>
+      </section>
+
+      {/* Get in Touch Marquee */}
+      <section className="overflow-hidden bg-background py-16">
+        <div className="marquee-container">
+          <div className="marquee-content">
+            {[...Array(3)].map((_, i) => (
+              <Link
+                key={i}
+                to="/contact"
+                className="marquee-text text-4xl md:text-6xl font-bold text-primary hover:text-primary/80 transition-colors"
+              >
+                Get in touch with Us Today!
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

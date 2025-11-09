@@ -130,4 +130,27 @@ All colors MUST be HSL.
   .text-gradient {
     @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
   }
+
+  /* Marquee Animation */
+  .marquee-container {
+    @apply w-full;
+  }
+
+  .marquee-content {
+    @apply flex whitespace-nowrap;
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .marquee-text {
+    @apply inline-block mx-8;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
 }
