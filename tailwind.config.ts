@@ -57,6 +57,7 @@ export default {
         footer: {
           bg: "hsl(var(--footer-bg))",
         },
+        "text-on-dark": "hsl(var(--text-on-dark))",
       },
       borderRadius: {
         lg: "var(--radius)",

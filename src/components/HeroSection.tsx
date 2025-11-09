@@ -16,11 +16,11 @@ const HeroSection = ({ image, title, subtitle, children }: HeroSectionProps) => 
       />
       <div className="hero-overlay" />
       <div className="hero-content">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-text-on-dark mb-6 animate-fade-in">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-text-on-dark/90 max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in">
+          <p className="text-lg md:text-xl text-white/95 max-w-3xl mx-auto mb-8 leading-relaxed animate-fade-in">
             {subtitle}
           </p>
         )}

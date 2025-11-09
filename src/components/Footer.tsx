@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-footer-bg text-text-on-dark">
+    <footer className="bg-footer-bg text-white">
       <div className="container-custom py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="text-2xl font-bold text-primary">Talent</span>
               <span className="text-2xl font-bold text-accent">Bridge</span>
             </div>
-            <p className="text-sm text-text-on-dark/80 leading-relaxed">
+            <p className="text-sm text-white/80 leading-relaxed">
               Your global partner in talent acquisition and workforce success. Connecting exceptional
               professionals with world-class organizations.
             </p>
@@ -83,11 +83,11 @@ const Footer = () => {
           <div>
             <h3 className="font-bold text-lg mb-4">Our Services</h3>
             <ul className="space-y-2">
-              <li className="text-sm text-text-on-dark/80">Recruitment Solutions</li>
-              <li className="text-sm text-text-on-dark/80">Executive Search</li>
-              <li className="text-sm text-text-on-dark/80">Career Coaching</li>
-              <li className="text-sm text-text-on-dark/80">Workforce Consulting</li>
-              <li className="text-sm text-text-on-dark/80">RPO Services</li>
+              <li className="text-sm text-white/80">Recruitment Solutions</li>
+              <li className="text-sm text-white/80">Executive Search</li>
+              <li className="text-sm text-white/80">Career Coaching</li>
+              <li className="text-sm text-white/80">Workforce Consulting</li>
+              <li className="text-sm text-white/80">RPO Services</li>
             </ul>
           </div>
 
@@ -97,20 +97,20 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-2">
                 <MapPin size={18} className="mt-1 flex-shrink-0" />
-                <span className="text-sm text-text-on-dark/80">
+                <span className="text-sm text-white/80">
                   Lagos Business District<br />
                   Lagos, Nigeria
                 </span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone size={18} className="flex-shrink-0" />
-                <span className="text-sm text-text-on-dark/80">+234 (0) 123 456 7890</span>
+                <span className="text-sm text-white/80">+234 (0) 123 456 7890</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={18} className="flex-shrink-0" />
                 <a
                   href="mailto:info@talentbridgeglobal.com"
-                  className="text-sm text-text-on-dark/80 hover:text-primary transition-colors"
+                  className="text-sm text-white/80 hover:text-primary transition-colors"
                 >
                   info@talentbridgeglobal.com
                 </a>
@@ -119,16 +119,16 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-text-on-dark/20 mt-12 pt-8">
+        <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-text-on-dark/60">
+            <p className="text-sm text-white/70">
               © {currentYear} Talent Bridge Global. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link to="#" className="text-sm text-text-on-dark/60 hover:text-primary transition-colors">
+              <Link to="#" className="text-sm text-white/70 hover:text-primary transition-colors">
                 Privacy Policy
               </Link>
-              <Link to="#" className="text-sm text-text-on-dark/60 hover:text-primary transition-colors">
+              <Link to="#" className="text-sm text-white/70 hover:text-primary transition-colors">
                 Terms of Service
               </Link>
             </div>
