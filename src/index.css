@@ -100,7 +100,7 @@ All colors MUST be HSL.
 
 @layer utilities {
   .hero-section {
-    @apply relative min-h-screen flex items-end pb-24 overflow-hidden;
+    @apply relative min-h-screen flex items-end pb-32 md:pb-40 overflow-hidden;
   }
 
   .hero-overlay {
@@ -108,7 +108,7 @@ All colors MUST be HSL.
   }
 
   .hero-content {
-    @apply relative z-20 text-center px-4 max-w-5xl mx-auto mb-12;
+    @apply relative z-20 text-center px-4 max-w-5xl mx-auto mb-16 md:mb-20;
   }
 
   .section-padding {
