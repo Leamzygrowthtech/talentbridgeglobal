@@ -1,8 +1,21 @@
-import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+  };
 
   return (
     <footer className="bg-footer-bg text-white">
@@ -52,29 +65,29 @@ const Footer = () => {
             <h3 className="font-bold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("home")} className="text-sm hover:text-primary transition-colors">
                   Home
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/about" className="text-sm hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("about")} className="text-sm hover:text-primary transition-colors">
                   About Us
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/services" className="text-sm hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("services")} className="text-sm hover:text-primary transition-colors">
                   Services
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/team" className="text-sm hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("team")} className="text-sm hover:text-primary transition-colors">
                   Our Team
-                </Link>
+                </button>
               </li>
               <li>
-                <Link to="/contact" className="text-sm hover:text-primary transition-colors">
+                <button onClick={() => scrollToSection("contact")} className="text-sm hover:text-primary transition-colors">
                   Contact
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -132,12 +145,12 @@ const Footer = () => {
               © {currentYear} Talent Bridge Global. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link to="#" className="text-sm text-white/70 hover:text-primary transition-colors">
+              <button onClick={() => scrollToSection("home")} className="text-sm text-white/70 hover:text-primary transition-colors">
                 Privacy Policy
-              </Link>
-              <Link to="#" className="text-sm text-white/70 hover:text-primary transition-colors">
+              </button>
+              <button onClick={() => scrollToSection("home")} className="text-sm text-white/70 hover:text-primary transition-colors">
                 Terms of Service
-              </Link>
+              </button>
             </div>
           </div>
         </div>

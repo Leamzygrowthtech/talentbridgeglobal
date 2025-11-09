@@ -1,16 +1,29 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+
+      // Detect active section
+      const sections = ["home", "about", "services", "team", "contact"];
+      const currentSection = sections.find(section => {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          return rect.top <= 100 && rect.bottom >= 100;
+        }
+        return false;
+      });
+      if (currentSection) {
+        setActiveSection(currentSection);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,14 +31,29 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/services", label: "Services" },
-    { path: "/team", label: "Team" },
-    { path: "/contact", label: "Contact" },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "services", label: "Services" },
+    { id: "team", label: "Team" },
+    { id: "contact", label: "Contact" },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
+  const isActive = (id: string) => activeSection === id;
 
   return (
     <header
@@ -36,7 +64,7 @@ const Header = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
+          <button onClick={() => scrollToSection("home")} className="flex items-center space-x-2 group">
             <div className="flex items-center">
               <span className="text-2xl font-bold text-primary group-hover:text-primary-hover transition-colors">
                 Talent
@@ -46,35 +74,35 @@ const Header = () => {
                 Global
               </span>
             </div>
-          </Link>
+          </button>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
+              <button
+                key={link.id}
+                onClick={() => scrollToSection(link.id)}
                 className={`text-sm font-semibold transition-colors hover:text-primary relative ${
-                  isActive(link.path)
+                  isActive(link.id)
                     ? "text-primary"
                     : isScrolled
                     ? "text-foreground"
                     : "text-text-on-dark"
                 } ${
-                  isActive(link.path)
+                  isActive(link.id)
                     ? "after:absolute after:bottom-[-4px] after:left-0 after:right-0 after:h-0.5 after:bg-primary"
                     : ""
                 }`}
               >
                 {link.label}
-              </Link>
+              </button>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button asChild className="btn-primary">
-              <Link to="/contact">Get Started</Link>
+            <Button onClick={() => scrollToSection("contact")} className="btn-primary">
+              Get Started
             </Button>
           </div>
 
@@ -93,22 +121,19 @@ const Header = () => {
           <div className="md:hidden absolute top-20 left-0 right-0 bg-background border-t border-border shadow-lg">
             <div className="flex flex-col py-4">
               {navLinks.map((link) => (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className={`px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary ${
-                    isActive(link.path) ? "text-primary bg-secondary" : "text-foreground"
+                <button
+                  key={link.id}
+                  onClick={() => scrollToSection(link.id)}
+                  className={`px-6 py-3 text-sm font-semibold transition-colors hover:bg-secondary text-left ${
+                    isActive(link.id) ? "text-primary bg-secondary" : "text-foreground"
                   }`}
                 >
                   {link.label}
-                </Link>
+                </button>
               ))}
               <div className="px-6 pt-4">
-                <Button asChild className="w-full btn-primary">
-                  <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                    Get Started
-                  </Link>
+                <Button onClick={() => scrollToSection("contact")} className="w-full btn-primary">
+                  Get Started
                 </Button>
               </div>
             </div>
