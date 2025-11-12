@@ -12,7 +12,7 @@ const TeamMemberCard = ({ name, title, bio, image }: TeamMemberCardProps) => {
         <img
           src={image}
           alt={name}
-          className="w-32 h-32 rounded-full object-cover border-4 border-primary/10"
+          className="w-32 h-32 rounded-full object-cover object-top border-4 border-primary/10"
         />
       </div>
       <h3 className="text-xl font-bold text-center mb-2">{name}</h3>
