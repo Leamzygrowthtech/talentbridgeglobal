@@ -348,7 +348,7 @@ const Index = () => {
       </section>
 
       {/* Companies We Partner With */}
-      <section className="section-padding bg-[#D32F2F]">
+      <section className="section-padding bg-primary">
         <div className="container-custom">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
             Companies We Partner With:
