@@ -16,6 +16,10 @@ import heroAboutImage from "@/assets/hero-about.jpg";
 import servicesImage from "@/assets/services-image.jpg";
 import jobSeekersImage from "@/assets/job-seekers.jpg";
 import employersImage from "@/assets/employers.jpg";
+import teamSarah from "@/assets/team-sarah.jpg";
+import teamOlivia from "@/assets/team-olivia.jpg";
+import teamSophia from "@/assets/team-sophia.jpg";
+import teamMichael from "@/assets/team-michael.jpg";
 import fortune500 from "@/assets/partners/fortune-500.png";
 import forbesGlobal from "@/assets/partners/forbes-global.png";
 import ftse100 from "@/assets/partners/ftse-100.png";
@@ -87,13 +91,13 @@ const Index = () => {
       name: "Jonathan Müller",
       title: "Senior Executive Recruiter",
       bio: "Jonathan bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+      image: teamSarah,
     },
     {
       name: "Sophia Rossi",
       title: "Global Talent Consultant",
       bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+      image: teamSophia,
     },
   ];
 
@@ -103,7 +107,7 @@ const Index = () => {
       name: "Daniel Chen",
       title: "Director of Client Services",
       bio: "Daniel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. His commitment to excellence and strategic insight defines our client experience.",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+      image: teamOlivia,
     },
     {
       name: "Isabella Duarte",
@@ -115,7 +119,7 @@ const Index = () => {
       name: "Marcus Thompson",
       title: "Operations Director",
       bio: "Marcus ensures operational efficiency across all recruitment initiatives. He manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
+      image: teamMichael,
     },
   ];
 
