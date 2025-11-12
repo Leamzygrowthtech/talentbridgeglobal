@@ -114,8 +114,15 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2">Phone</h3>
-                    <p className="text-sm text-muted-foreground">+1 (470) 555-2048</p>
+                    <h3 className="font-semibold mb-2">WhatsApp</h3>
+                    <a 
+                      href="https://wa.me/13854709152" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-sm text-primary hover:underline"
+                    >
+                      +1 (385) 470-9152
+                    </a>
                   </div>
                 </div>
 
