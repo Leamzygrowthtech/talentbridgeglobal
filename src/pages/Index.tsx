@@ -88,13 +88,13 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     },
     {
-      name: "Jonathan Müller",
+      name: "Jessica Miller",
       title: "Senior Executive Recruiter",
       bio: "Jonathan bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
       image: teamSarah,
     },
     {
-      name: "Sophia Rossi",
+      name: "Ashley Turner",
       title: "Global Talent Consultant",
       bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
       image: teamSophia,
@@ -104,7 +104,7 @@ const Index = () => {
   const fullTeamMembers = [
     ...teamMembers,
     {
-      name: "Daniel Chen",
+      name: "Emily Carter",
       title: "Director of Client Services",
       bio: "Daniel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. His commitment to excellence and strategic insight defines our client experience.",
       image: teamOlivia,
@@ -116,7 +116,7 @@ const Index = () => {
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
     },
     {
-      name: "Marcus Thompson",
+      name: "Brittany Parker",
       title: "Operations Director",
       bio: "Marcus ensures operational efficiency across all recruitment initiatives. He manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
       image: teamMichael,
