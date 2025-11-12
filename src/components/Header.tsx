@@ -94,7 +94,10 @@ const Header = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button onClick={() => scrollToSection("contact")} className="btn-primary">
+            <Button 
+              onClick={() => window.open('https://wa.me/13854709152', '_blank')} 
+              className="btn-primary"
+            >
               Get Started
             </Button>
           </div>
@@ -125,7 +128,13 @@ const Header = () => {
                 </button>
               ))}
               <div className="px-6 pt-4">
-                <Button onClick={() => scrollToSection("contact")} className="w-full btn-primary">
+                <Button 
+                  onClick={() => {
+                    window.open('https://wa.me/13854709152', '_blank');
+                    setIsMobileMenuOpen(false);
+                  }} 
+                  className="w-full btn-primary"
+                >
                   Get Started
                 </Button>
               </div>

@@ -587,7 +587,12 @@ const Index = () => {
                     />
                   </div>
 
-                  <Button type="submit" className="w-full btn-primary" size="lg">
+                  <Button 
+                    type="button" 
+                    onClick={() => window.open('https://wa.me/13854709152', '_blank')} 
+                    className="w-full btn-primary" 
+                    size="lg"
+                  >
                     Send Message
                   </Button>
                 </form>

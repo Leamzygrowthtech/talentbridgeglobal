@@ -84,8 +84,12 @@ const Team = () => {
             Whether you're seeking your next career opportunity or looking to build your team with
             exceptional talent, we're here to help.
           </p>
-          <Button asChild className="btn-primary" size="lg">
-            <Link to="/contact">Contact Us</Link>
+          <Button 
+            onClick={() => window.open('https://wa.me/13854709152', '_blank')} 
+            className="btn-primary" 
+            size="lg"
+          >
+            Contact Us
           </Button>
         </div>
       </section>
