@@ -15,21 +15,21 @@ const Team = () => {
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     },
     {
-      name: "Jonathan Müller",
+      name: "Jessica Müller",
       title: "Senior Executive Recruiter",
-      bio: "Jonathan bridges the gap between top employers and exceptional talent. His expertise lies in workforce planning and client relationship management, helping businesses scale with precision and confidence across multiple industries.",
+      bio: "Jessica bridges the gap between top employers and exceptional talent. Her expertise lies in workforce planning and client relationship management, helping businesses scale with precision and confidence across multiple industries.",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
     },
     {
-      name: "Sophia Rossi",
+      name: "Ashley Rossi",
       title: "Global Talent Consultant",
-      bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors. Her consultative approach ensures every placement creates long-term value for both clients and candidates in international markets.",
+      bio: "Ashley specializes in leadership recruitment across technology, finance, and energy sectors. Her consultative approach ensures every placement creates long-term value for both clients and candidates in international markets.",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
     },
     {
-      name: "Daniel Chen",
+      name: "Emily Chen",
       title: "Director of Client Services",
-      bio: "Daniel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. His commitment to excellence and strategic insight defines our client experience.",
+      bio: "Emily oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. Her commitment to excellence and strategic insight defines our client experience.",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
     },
     {
@@ -39,9 +39,9 @@ const Team = () => {
       image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
     },
     {
-      name: "Marcus Thompson",
+      name: "Brittany Thompson",
       title: "Operations Director",
-      bio: "Marcus ensures operational efficiency across all recruitment initiatives. He manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
+      bio: "Brittany ensures operational efficiency across all recruitment initiatives. She manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
     },
   ];

@@ -90,13 +90,13 @@ const Index = () => {
     {
       name: "Jessica Miller",
       title: "Senior Executive Recruiter",
-      bio: "Jonathan bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
+      bio: "Jessica bridges the gap between top employers and exceptional talent, specializing in workforce planning and client relationship management.",
       image: teamSarah,
     },
     {
       name: "Ashley Turner",
       title: "Global Talent Consultant",
-      bio: "Sophia specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
+      bio: "Ashley specializes in leadership recruitment across technology, finance, and energy sectors with a consultative, value-driven approach.",
       image: teamSophia,
     },
   ];
@@ -106,7 +106,7 @@ const Index = () => {
     {
       name: "Emily Carter",
       title: "Director of Client Services",
-      bio: "Daniel oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. His commitment to excellence and strategic insight defines our client experience.",
+      bio: "Emily oversees the candidate journey from initial consultation to placement, ensuring professionals are well-positioned for global opportunities. Her commitment to excellence and strategic insight defines our client experience.",
       image: teamOlivia,
     },
     {
@@ -118,7 +118,7 @@ const Index = () => {
     {
       name: "Brittany Parker",
       title: "Operations Director",
-      bio: "Marcus ensures operational efficiency across all recruitment initiatives. He manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
+      bio: "Brittany ensures operational efficiency across all recruitment initiatives. She manages internal systems, process optimization, and compliance standards, ensuring our workflows remain seamless, transparent, and effective.",
       image: teamMichael,
     },
   ];
