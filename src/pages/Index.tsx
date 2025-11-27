@@ -28,6 +28,7 @@ import dax40 from "@/assets/partners/dax-40.png";
 import headhuntingIcon from "@/assets/partners/headhunting-icon.png";
 import globalTalentIcon from "@/assets/partners/global-talent-icon.png";
 import partnershipIcon from "@/assets/partners/partnership-icon.png";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import {
   Carousel,
   CarouselContent,
@@ -387,6 +388,9 @@ const Index = () => {
           </Carousel>
         </div>
       </section>
+
+      {/* Testimonials Section */}
+      <TestimonialsSection />
 
       {/* Get in Touch Marquee */}
       <section className="overflow-hidden bg-background py-16">
